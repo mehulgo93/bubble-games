@@ -15,18 +15,54 @@ body {
   font-weight: bold;
   margin-left: 10px;
   font-style: italic;
+  padding-right: 70%;
 }
 .header-container {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 10px;
 }
 
 .language-button {
   margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  display: table-row-group;
 }
 
-.login-button {
-  margin-right: 10px;
+.nav-bar-container {
+  background-color: black;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-button {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.search-container input {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  width:40%;
+  border-radius: 10em;;
 }
