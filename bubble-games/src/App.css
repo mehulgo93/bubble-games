@@ -55,8 +55,9 @@ body {
 }
 
 .search-container {
-  text-align: center;
+  text-align: flex-end;
   margin-top: 40px;
+  margin-right: 40px;
 }
 
 .search-container input {
@@ -72,4 +73,13 @@ body {
   height: 200px;
   border-radius: 10px;
   margin: 10px;
+}
+
+.login-message {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-style: italic;
+  padding-right: 70%;
 }

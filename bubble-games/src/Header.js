@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import myImage from './logoWithBlackBackground.jpeg';
+import SearchBar from './SearchBar';
+import LoginForm from './LoginForm';
+
+
 
 
 function Header() {
@@ -8,11 +12,9 @@ function Header() {
             <div className="header-container">
                 <h1 className='logo-name'><img className='Logo' src={myImage} alt="Logo" />Bubble Games</h1>
                 <div className="language-button">
-                    <button className="language-button">Language</button>
+                    <LoginForm />
                 </div>
-                <div className="login-button">
-                    <button className="language-button">Login</button>
-                </div>
+                <SearchBar />
             </div>
         </header>
     )

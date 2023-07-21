@@ -19,19 +19,6 @@ function App() {
       })
   }, []);
 
-
-  // useEffect(() => {
-  //   fetch('https://games-details.p.rapidapi.com/search/cs', options)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       console.log(data)
-  //       // setGames(data);
-  //     })
-  //     .catch(err => {
-  //       console.error(err);
-  //     });
-  // }, []);
-
   return (
     <div>
       <Header />
