@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Header from './Header';
+import NavBar from './NavBar';
+import GameList from './GameList';
+
+
 
 function App() {
+
+  const [games, setGames] = useState([]);
+
+  useEffect(() => {
+    fetch('https://api.rawg.io/api/platforms?key=e54d67d773af48d6af7045140de9d84c')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data.results)
+        setGames(data.results)
+      })
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <NavBar />
+      <GameList games={games} />
     </div>
-  );
+  )
 }
 
 export default App;
